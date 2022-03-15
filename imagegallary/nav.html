@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .navbar {
+            position: absolute;
+            left: 0;
+            width: 40%;
+            /* height: 100vh; */
+            background-color: rgb(56, 56, 56);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 1s;
+        }
+        .fa-chevron-down {
+            position: absolute;
+            display: block;
+            width: 20%;
+            height: 25px;
+            left: 4%;
+            top: 2%;
+            font-size: 1.5rem;
+            padding: 10px 0px;
+            text-align: center;
+            align-self: flex-start;
+            background-color: rgb(82, 62, 62);
+            z-index: 1;
+        }
+
+        ul {
+            position: absolute;
+            list-style: none;
+            top: 0%;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s;
+        }
+
+        ul li {
+            display: block;
+            color: rgb(58, 95, 95);
+            width: 40%;
+            height: 60px;
+            margin-bottom: 30px;
+            background-color: rgb(56,56,56);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            border-radius: 0px;
+            border: 1px inset rgb(61, 61, 61);
+            outline: none;
+        }
+        ul li:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            border-style: outset;
+        }
+        
+        ul {
+            visibility: hidden;
+        }
+        .navbar:hover ul {
+            visibility: visible;
+        }
+        .navbar:hover {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <section class="nav">
+        <div class="navbar">
+            <i class="fas fa-chevron-down"></i>
+            <ul>
+                <li class="item"><i class="fas fa-home"></i></li>
+                <li class="item"><i class="fas fa-bars"></i></li>
+                <li class="item"><i class="fas fa-address-book"></i></li>
+                <li class="item"><i class="fas fa-user"></i></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
